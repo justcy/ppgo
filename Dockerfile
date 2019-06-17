@@ -7,4 +7,4 @@ RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
 && tar -xf /PPGo_Job.tar.gz -C /PPGo_Job --strip-components=1 \
 && rm /PPGo_Job.tar.gz 
 WORKDIR /PPGo_Job
-ENTRYPOINT ["sh ./run.sh" ,"start"]
+ENTRYPOINT ["sh","./run.sh" ,"start"]
